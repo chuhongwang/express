@@ -83,7 +83,8 @@ class EmployeeController extends Controller
      */
     public function actionCreate()
     {
-        $model = new EmployeeSearch();
+
+        $model = new Employee();
         $model->create_time=DateHelper::getDateTime();
         if ($model->load(Yii::$app->request->queryParams) && $model->save()) {
             return $this->redirect('index');

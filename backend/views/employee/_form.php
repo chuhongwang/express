@@ -31,7 +31,7 @@ foreach ($point as $k=>$value){
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
     <?php
-    DateSelectHelper::CheckDatesBoxs($model->birthday, 'EmployeeSearch[birthday]', '生日');
+    DateSelectHelper::CheckDatesBoxs($model->birthday, 'Employee[birthday]', '生日');
     ?>
 
     <?= $form->field($model, 'address')->textInput(['maxlength' => true]) ?>
