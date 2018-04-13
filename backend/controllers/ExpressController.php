@@ -2,12 +2,17 @@
 
 namespace backend\controllers;
 
+use common\components\DateHelper;
 use Yii;
 use common\models\Express;
 use backend\models\ExpressSearch;
+use common\components\StringHelper;
+use yii\filters\AccessControl;
+use yii\filters\ContentNegotiator;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\Response;
 
 /**
  * ExpressController implements the CRUD actions for Express model.
@@ -25,6 +30,22 @@ class ExpressController extends Controller
                 'actions' => [
                     'delete' => ['POST'],
                 ],
+            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'contentNegotiator' => [
+                'class' => ContentNegotiator::className(),
+                'only' => ['delete-ajax'],
+                'formats' => [
+                    'application/json' => Response::FORMAT_JSON,
+                ]
             ],
         ];
     }
@@ -64,9 +85,10 @@ class ExpressController extends Controller
     public function actionCreate()
     {
         $model = new Express();
-
+        $model->express_number=StringHelper::getRandomNumString(16);
+        $model->create_time=DateHelper::getDateTime();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect('index');
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -80,12 +102,13 @@ class ExpressController extends Controller
      * @param string $id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate()
     {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $params=Yii::$app->request->queryParams;
+        $model=new ExpressSearch();
+        $res=$model->EditExpress($params);
+        if ($res) {
+            return $this->redirect('index');
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -119,6 +142,38 @@ class ExpressController extends Controller
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+
+    /**
+     *class:${name}
+     *user:褚红旺
+     * 回显信息
+     */
+    public function actionData(){
+        $params=Yii::$app->request->queryParams;
+        $model=new ExpressSearch();
+        $res=$model->getData($params);
+        if($res){
+            return $this->render('update',['model'=>$model]);
+        }else{
+            return $this->redirect('index');
+        }
+    }
+
+    public function actionDeleteAjax()
+    {
+        $post = YII::$app->request->post();
+        $json = ['code' => 0, 'id' => $post['id']];
+        if (empty($post['id'])) {
+            return ['code' => 1, 'message' => '输入参数错误'];
+        }
+        $rs = new ExpressSearch();
+        $rs->getDelete($post['id'], $post['delete_flag']);
+        if ($rs) {
+            return $json;
+        } else {
+            return ['code' => 1, 'message' => '删除失败'];
         }
     }
 }

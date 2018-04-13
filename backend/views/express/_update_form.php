@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="express-form">
 
     <?php $form = ActiveForm::begin([
-        'action' => 'create',
+        'action' => 'update',
         'method' => 'post',
         'id' => 'form_id'
     ]); ?>
@@ -35,7 +35,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'next_point_id')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('添加',['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('编辑', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

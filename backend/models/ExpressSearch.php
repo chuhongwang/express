@@ -2,6 +2,7 @@
 
 namespace backend\models;
 
+use common\components\DateHelper;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -68,7 +69,7 @@ class ExpressSearch extends Express
             'create_time' => $this->create_time,
             'update_time' => $this->update_time,
             'delete_time' => $this->delete_time,
-            'delete_flag' => $this->delete_flag,
+            'delete_flag' => 1,
         ]);
 
         $query->andFilterWhere(['like', 'express_number', $this->express_number])
@@ -80,5 +81,54 @@ class ExpressSearch extends Express
             ->andFilterWhere(['like', 'receive_phone', $this->receive_phone]);
 
         return $dataProvider;
+    }
+
+    public function getData($params)
+    {
+        $id = $params['ExpressSearch']['id'];
+        $model = Express::find()->andFilterWhere(['id' => $id])->andFilterWhere(['delete_flag' => 1])->asArray()->one();
+        if (empty($model)) {
+            return false;
+        } else {
+            $this->id = $model['id'];
+            $this->express_number = $model['express_number'];
+            $this->state = $model['state'];
+            $this->post_address = $model['post_address'];
+            $this->receive_address = $model['receive_address'];
+            $this->post_name = $model['post_name'];
+            $this->receive_name = $model['receive_name'];
+            $this->price = $model['price'];
+            $this->post_phone = $model['post_phone'];
+            $this->receive_phone = $model['receive_phone'];
+            $this->point_id = $model['point_id'];
+            $this->next_point_id = $model['next_point_id'];
+            return true;
+        }
+    }
+
+    public function EditExpress($params){
+        $this->load($params);
+        if(!empty($this->id)){
+            $model=Express::find()->andFilterWhere(['id'=>$this->id])->andFilterWhere(['delete_flag'=>1])->one();
+            $model->post_address=$this->post_address;
+            $model->receive_address=$this->receive_address;
+            $model->post_name=$this->post_name;
+            $model->receive_name=$this->receive_name;
+            $model->post_phone=$this->post_phone;
+            $model->receive_phone=$this->receive_phone;
+            $model->point_id=$this->point_id;
+            $model->next_point_id=$this->next_point_id;
+            $model->update_time=DateHelper::getDateTime();
+            $res=$model->save();
+            return $res;
+        }
+    }
+
+    public function getDelete($id, $delete_flag)
+    {
+        return Express::updateAll(['delete_flag' => $delete_flag, 'delete_time' => DateHelper::getDateTime()],
+            [
+                'id' => $id,
+            ]);
     }
 }
