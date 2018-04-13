@@ -7,11 +7,11 @@ use Yii;
 /**
  * This is the model class for table "history_record".
  *
- * @property string $id
+ * @property integer $id
  * @property integer $state
  * @property string $date
- * @property string $express_id
- * @property string $point
+ * @property integer $express_id
+ * @property integer $point
  * @property string $create_time
  * @property string $update_time
  * @property string $delete_time
@@ -32,9 +32,8 @@ class HistoryRecord extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
-            [['id', 'state', 'express_id', 'point'], 'integer'],
-            [['date','create_time', 'update_time', 'delete_time'], 'safe'],
+            [['state', 'express_id', 'point', 'delete_flag'], 'integer'],
+            [['date', 'create_time', 'update_time', 'delete_time'], 'safe'],
         ];
     }
 
@@ -49,6 +48,10 @@ class HistoryRecord extends \yii\db\ActiveRecord
             'date' => '状态改变时间',
             'express_id' => '快件id',
             'point' => '网点id',
+            'create_time' => 'Create Time',
+            'update_time' => 'Update Time',
+            'delete_time' => 'Delete Time',
+            'delete_flag' => 'Delete Flag',
         ];
     }
 

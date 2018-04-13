@@ -3,6 +3,7 @@
 namespace backend\controllers;
 
 use common\components\DateHelper;
+use common\models\HistoryRecord;
 use Yii;
 use common\models\Express;
 use backend\models\ExpressSearch;
@@ -88,6 +89,14 @@ class ExpressController extends Controller
         $model->express_number=StringHelper::getRandomNumString(16);
         $model->create_time=DateHelper::getDateTime();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            //添加成功以后插入到快递流转表
+            $history_model=new HistoryRecord();
+            $history_model->state=1;
+            $history_model->date=DateHelper::getDate();
+            $history_model->express_id=$model->express_number;
+            $history_model->point=$model->point_id;
+            $history_model->create_time=DateHelper::getDateTime();
+            $history_model->save();
             return $this->redirect('index');
         } else {
             return $this->render('create', [

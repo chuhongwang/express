@@ -4,6 +4,7 @@ use backend\assets\AppAsset;
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
+use common\components\StringHelper;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\ExpressSearch */
@@ -26,6 +27,9 @@ $column = [
         'attribute' => 'state',
         'headerOptions' => ['style' => 'text-align:center'],
         'contentOptions' => ['style' => 'text-align:center'],
+        'value'=>function($model){
+        return Yii::$app->params['status'][$model['state']];
+        }
     ],
     [
         'attribute' => 'post_address',
@@ -51,6 +55,9 @@ $column = [
         'attribute' => 'price',
         'headerOptions' => ['style' => 'text-align:center'],
         'contentOptions' => ['style' => 'text-align:center'],
+        'value'=>function($model){
+            return StringHelper::formatDecimal($model['price']);
+        }
     ],
     [
         'attribute' => 'post_phone',
@@ -59,11 +66,6 @@ $column = [
     ],
     [
         'attribute' => 'receive_phone',
-        'headerOptions' => ['style' => 'text-align:center'],
-        'contentOptions' => ['style' => 'text-align:center'],
-    ],
-    [
-        'attribute' => 'post_phone',
         'headerOptions' => ['style' => 'text-align:center'],
         'contentOptions' => ['style' => 'text-align:center'],
     ],

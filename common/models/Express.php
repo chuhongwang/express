@@ -60,7 +60,7 @@ class Express extends \yii\db\ActiveRecord
             'post_name' => '寄件人',
             'receive_name' => '收件人',
             'price' => '运费',
-            'post_phone' => '收件人电话',
+            'post_phone' => '寄件人电话',
             'receive_phone' => '收件人电话',
             'point_id' => '所在网点',
             'next_point_id' => '下一个网点',

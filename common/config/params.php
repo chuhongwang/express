@@ -23,6 +23,13 @@ return [
     'form.fieldConfig' => [
         'template' => "<div class='col-xs-3 col-sm-3 text-right'>{label}</div><div class='col-xs-9 col-sm-7'>{input}</div><div class='col-xs-12 col-xs-offset-3 col-sm-3 col-sm-offset-0'>{error}</div>",
     ],
+
+    'status'=>[
+        1=>'未发货',
+        2=>'已发货',
+        3=>'配送中',
+        4=>'已签收',
+    ],
    
 ];
 
