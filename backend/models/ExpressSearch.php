@@ -79,7 +79,7 @@ class ExpressSearch extends Express
             ->andFilterWhere(['like', 'post_name', $this->post_name])
             ->andFilterWhere(['like', 'receive_name', $this->receive_name])
             ->andFilterWhere(['like', 'post_phone', $this->post_phone])
-            ->andFilterWhere(['like', 'receive_phone', $this->receive_phone]);
+            ->andFilterWhere(['like', 'receive_phone', $this->receive_phone])->with('point')->with('nextPoint');
 
         return $dataProvider;
     }
@@ -87,6 +87,7 @@ class ExpressSearch extends Express
     public function getData($params)
     {
         $id = $params['ExpressSearch']['id'];
+
         $model = Express::find()->andFilterWhere(['id' => $id])->andFilterWhere(['delete_flag' => 1])->asArray()->one();
         if (empty($model)) {
             return false;

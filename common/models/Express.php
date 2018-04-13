@@ -79,4 +79,11 @@ class Express extends \yii\db\ActiveRecord
     {
         return new \backend\models\ExpressQuery(get_called_class());
     }
+
+    public function getPoint(){
+        return $this->hasOne(Point::className(),['id'=>'point_id']);
+    }
+    public function getNextPoint(){
+        return $this->hasOne(Point::className(),['id'=>'next_point_id']);
+    }
 }

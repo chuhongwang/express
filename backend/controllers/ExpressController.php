@@ -113,7 +113,7 @@ class ExpressController extends Controller
      */
     public function actionUpdate()
     {
-        $params=Yii::$app->request->queryParams;
+        $params=Yii::$app->request->post();
         $model=new ExpressSearch();
         $res=$model->EditExpress($params);
         if ($res) {

@@ -6,17 +6,17 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model common\models\Express */
 /* @var $form yii\widgets\ActiveForm */
-$point=\common\models\Point::find()->andFilterWhere(['delete_flag'=>1])->asArray()->all();
-$arr=[];
-foreach ($point as $k=>$value){
-    $arr[$value['id']]=$value['name'];
+$point = \common\models\Point::find()->andFilterWhere(['delete_flag' => 1])->asArray()->all();
+$arr = [];
+foreach ($point as $k => $value) {
+    $arr[$value['id']] = $value['name'];
 }
 ?>
 
 <div class="express-form">
 
     <?php $form = ActiveForm::begin([
-        'action' => 'update',
+        'action' => '/express/update',
         'method' => 'post',
         'id' => 'form_id'
     ]); ?>
@@ -25,6 +25,7 @@ foreach ($point as $k=>$value){
     <?= $form->field($model, 'point_id')->dropDownList($arr) ?>
 
     <?= $form->field($model, 'next_point_id')->dropDownList($arr) ?>
+    <?= $form->field($model, 'id')->hiddenInput()->label(false) ?>
 
     <div class="form-group">
         <?= Html::submitButton('编辑', ['class' => 'btn btn-success']) ?>

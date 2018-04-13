@@ -6,6 +6,11 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model common\models\Express */
 /* @var $form yii\widgets\ActiveForm */
+$point = \common\models\Point::find()->andFilterWhere(['delete_flag' => 1])->asArray()->all();
+$arr = [];
+foreach ($point as $k => $value) {
+    $arr[$value['id']] = $value['name'];
+}
 ?>
 
 <div class="express-form">
@@ -30,9 +35,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'receive_phone')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'point_id')->textInput() ?>
+    <?= $form->field($model, 'point_id')->dropDownList($arr) ?>
 
-    <?= $form->field($model, 'next_point_id')->textInput() ?>
+    <?= $form->field($model, 'next_point_id')->dropDownList($arr) ?>
 
     <div class="form-group">
         <?= Html::submitButton('添加',['class' => 'btn btn-success']) ?>

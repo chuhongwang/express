@@ -73,11 +73,17 @@ $column = [
         'attribute' => 'point_id',
         'headerOptions' => ['style' => 'text-align:center'],
         'contentOptions' => ['style' => 'text-align:center'],
+        'value'=>function($model){
+            return $model['point']['name'];
+        }
     ],
     [
         'attribute' => 'next_point_id',
         'headerOptions' => ['style' => 'text-align:center'],
         'contentOptions' => ['style' => 'text-align:center'],
+        'value'=>function($model){
+            return $model['nextPoint']['name'];
+        }
     ],
     [
             'class'=>yii\grid\ActionColumn::className(),
