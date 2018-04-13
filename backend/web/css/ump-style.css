@@ -1,0 +1,70 @@
+/***advertising***/
+.ad_file {
+  position: relative;
+  display: inline-block;
+  background: rgb(215, 215, 215);
+  border-radius: 1px;
+  padding: 4px 12px;
+  overflow: hidden;
+  color: #333333;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+  cursor:pointer;
+}
+.ad_file .form-group{
+  margin-bottom:0;
+}
+.ad_file .help-block{
+  margin-bottom:0;
+  margin-top:0;
+}
+.ad_file input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor:pointer;
+}
+.ad_file:hover {
+  background: rgb(215, 215, 215);
+  color: #000;
+  text-decoration: none;
+}
+
+/***message***/
+
+.clear{
+  clear:both;
+}
+#common_templates_box{
+  margin-bottom:15px;
+}
+#common_templates_box span.common_templates{
+  display:block;
+  padding:4px 6px;
+  float:left;
+
+  margin:5px 15px 5px 0;
+  background:rgb(232, 232, 232);
+  color:#000;
+}
+#common_templates_box span.common_templates button{
+  background:none;border:none;
+}
+#common_templates_box span.manage_templates{
+  display:block;
+  color:#169bd5;
+  padding:4px 0;
+
+}
+
+
+.uniform_right{
+  line-height:35px;
+  text-align: right;
+}
+.uniform_left{
+  line-height:35px;
+  text-align: left;
+}

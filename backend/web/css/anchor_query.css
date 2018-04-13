@@ -1,0 +1,15 @@
+#ui-datepicker-div { z-index: 9999 !important; }
+
+#app-list { font-weight: 100; font-size: x-small; color: #777; }
+
+td { white-space: nowrap !important; }
+tbody { font-size: 10px;  }
+tr { cursor: pointer; }
+
+/*#form-table { padding: 4px; }*/
+#form-table th { padding: 8px; }
+#anchor-id { width: 100px; }
+#stream-id { width: 280px; }
+#dtBegin { width: 100px; }
+
+#line-chart { height: 240px; }

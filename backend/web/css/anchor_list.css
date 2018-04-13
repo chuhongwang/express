@@ -1,0 +1,4 @@
+@charset "UTF-8";
+.nav-tabs{border-bottom: 0px !important;}
+.nav-tabs > li.active > a{border: 0px !important;background-color: powderblue !important;}
+#form-table{margin: 5px 0px;}

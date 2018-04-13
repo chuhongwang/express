@@ -1,0 +1,4 @@
+
+thead,tbody { font-size: x-small; }
+thead th { background-color: #44d9e8 !important; font-weight: bold !important; }
+tbody tr:hover { background-color: mediumspringgreen !important; }

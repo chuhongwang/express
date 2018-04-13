@@ -1,0 +1,71 @@
+
+/*#table_title h3 { text-align:center; }*/
+
+.nopadding { padding:0 !important;}
+.tile { float: left; }
+.tile-right { float: right; }
+.area_body { padding: 0 15px; }
+
+#table_title { padding-left: 30px; }
+#table_title small { padding-left: 30px; }
+
+.field_title { margin: 0 2px; }
+.fields .btn { margin: 0 5px; }
+
+.time_gran { margin: 2px; }
+
+/*.btn { background-color: whitesmoke; }*/
+
+.btn.active { background-color: #b4d100 !important; }
+
+label { padding: 1px 5px 1px 15px; }
+
+.modal-body { max-height: 100%; }
+#fields_dimen .btn-group { margin-right: 15px; }
+
+.dimen_filter { margin-right: 4px; }
+.dimen_item { margin: 2px 10px; background-color: white; }
+.dimen_item:hover { border-bottom: 1px solid black !important; }
+
+.fields_title, .charts_title {
+    margin: 5px 0; width: 100px; height: 20px; line-height: 20px; font-size: 12px; font-weight: 700;
+    color: white; padding: 0 10px;  /*text-align: center;*/  cursor: pointer;
+    background: -webkit-linear-gradient(left, black, transparent); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, black, transparent); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, black, transparent); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, brown, transparent); /* 标准的语法 */
+}
+
+.time-setter { width: 135px; }
+#ui-datepicker-div { z-index: 9999 !important; }
+
+#querydesc { padding: 10px 10px 0 10px; font-size: 10px; font-weight: 400; }
+
+.chart_tab { height: 28px; padding: 5px 10px !important; }
+#charts_pic, #charts_loading { height: 320px; width: 100%}
+#charts_loading { padding: 30px 0; background-color: white; }
+
+.sheet_type { margin: 5px 10px; padding: 10px 20px 3px 10px; border: 2px solid white; float: left; cursor: pointer; }
+.sheet_type.selected { border: 2px solid gold; background-color: linen; }
+
+/*#table_sheet_topbar { overflow-x: auto;}*/
+/*#table_sheet_topbar table { float: right; }*/
+#table_sheet_topbar th {
+    cursor: pointer;
+    background: #ffc;
+    background: linear-gradient(to bottom, lightgrey, transparent); /* 标准的语法 */
+}
+
+
+.table_sheets { margin: 20px; }
+#table_sheet table, #table_sheet td, #table_sheet th { border:1px solid lightgrey; }
+/*#table_sheet table { }*/
+#table_sheet th {
+    cursor: pointer;
+    min-width: 20px;
+    background: linear-gradient(to bottom, lavenderblush, transparent); /* 标准的语法 */
+}
+#table_sheet thead tr:nth-child(2) th:not(:first-child) { cursor: n-resize; }
+#table_sheet th, td { max-height: 10px; }
+#table_sheet th { text-align: center; }
+#table_sheet td { text-align: right; }
