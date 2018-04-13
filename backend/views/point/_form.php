@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin([
         'action' => '/point/create',
-        'method' => 'get',
+        'method' => 'post',
         'id' => 'form_id',
     ]); ?>
 

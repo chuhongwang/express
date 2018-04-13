@@ -27,7 +27,6 @@ yii
 
 
 # Compiled source #
-###################
 *.com
 *.class
 *.dll
@@ -39,6 +38,7 @@ yii
 *.pid
 *.xml
 *.data
+*.bin
 yii
 
 *.DS_Store

@@ -12756,3 +12756,2378 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1523600765.3041
     'REQUEST_TIME' => 1523600765
 ]
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_item`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_rule`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_item_child`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `point` WHERE `delete_flag`=1
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+    in /Users/nicc/git/express/backend/views/point/index.php:70
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE `delete_flag`=1 LIMIT 20
+    in /Users/nicc/git/express/backend/models/PointQuery.php:23
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `b`.* FROM `auth_assignment` `a`, `auth_item` `b` WHERE (`a`.`item_name`=`b`.`name`) AND (`a`.`user_id`='1') AND (`b`.`type`=2)
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:78
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_item_child`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:78
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `item_name` FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:78
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_item` WHERE (`type`=2) AND (`name` IN ('/employee/*', '/employee/create', '/employee/delete', '/employee/index', '/employee/update', '/employee/view', '/express/*', '/express/create', '/express/delete', '/express/index', '/express/update', '/express/view', '/history-record/*', '/history-record/create', '/history-record/delete', '/history-record/index', '/history-record/update', '/history-record/view', '/point/*', '/point/create', '/point/delete', '/point/index', '/point/update', '/point/view', '/add/*', '/ark/*', '/ark/debt-repay-plan-list', '/ark/enterprise-list', '/ark/project-list', '/ark/repayment-plan', '/ark/repayment-plan-detail', '/site/*', '/site/add-people', '/site/add-user', '/site/captcha', '/site/delete', '/site/error', '/site/go-add-user', '/site/index', '/site/login', '/site/logout', '/site/pc-img', '/site/up-img', '/site/user-list', '/admin/*', '/admin/assignment/*', '/admin/assignment/assign', '/admin/assignment/index', '/admin/assignment/revoke', '/admin/assignment/view', '/admin/default/*', '/admin/default/index', '/admin/menu/*', '/admin/menu/create', '/admin/menu/delete', '/admin/menu/index', '/admin/menu/update', '/admin/menu/view', '/admin/permission/*', '/admin/permission/assign', '/admin/permission/create', '/admin/permission/delete', '/admin/permission/index', '/admin/permission/remove', '/admin/permission/update', '/admin/permission/view', '/admin/role/*', '/admin/role/assign', '/admin/role/create', '/admin/role/delete', '/admin/role/index', '/admin/role/remove', '/admin/role/update', '/admin/role/view', '/admin/route/*', '/admin/route/assign', '/admin/route/create', '/admin/route/index', '/admin/route/refresh', '/admin/route/remove', '/admin/rule/*', '/admin/rule/create', '/admin/rule/delete', '/admin/rule/index', '/admin/rule/update', '/admin/rule/view', '/admin/user/*', '/admin/user/activate', '/admin/user/change-password', '/admin/user/delete', '/admin/user/index', '/admin/user/login', '/admin/user/logout', '/admin/user/request-password-reset', '/admin/user/reset-password', '/admin/user/signup', '/admin/user/view', '/user-info/*'))
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:78
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/add/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/admin/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/ark/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/employee/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/express/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/history-record/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/point/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/site/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT `id` FROM `menu` WHERE route like '/user-info/%'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:45:02 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/employee/index?EmployeeSearch%5Bid%5D=&EmployeeSearch%5Bname%5D=&EmployeeSearch%5Bgender%5D=&EmployeeSearch%5Bphone%5D=&EmployeeSearch%5Bemail%5D=&EmployeeSearch%5Bbirthday%5D=&EmployeeSearch%5Baddress%5D=&EmployeeSearch%5BpointId%5D=&per-page=20'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/index'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601902.6534
+    'REQUEST_TIME' => 1523601902
+]
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:05 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601905.0704
+    'REQUEST_TIME' => 1523601905
+]
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:14 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601914.2527
+    'REQUEST_TIME' => 1523601914
+]
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:25 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601925.5738
+    'REQUEST_TIME' => 1523601925
+]
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:26 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601926.4912
+    'REQUEST_TIME' => 1523601926
+]
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601927.1201
+    'REQUEST_TIME' => 1523601927
+]
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:27 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601927.6221
+    'REQUEST_TIME' => 1523601927
+]
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601928.0881
+    'REQUEST_TIME' => 1523601928
+]
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601928.5119
+    'REQUEST_TIME' => 1523601928
+]
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:28 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601928.92
+    'REQUEST_TIME' => 1523601928
+]
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:45:32 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60796'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601932.7491
+    'REQUEST_TIME' => 1523601932
+]
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:46:06 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+    'Point' => [
+        'name' => 'æ²³å—åˆ†æ”¯'
+        'address' => 'æ²³å—'
+        'phone' => '12345678989'
+        'email' => '1017265987@qq.com'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create?Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create&Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601966.7925
+    'REQUEST_TIME' => 1523601966
+]
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:14 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+    'Point' => [
+        'name' => 'æ²³å—åˆ†æ”¯'
+        'address' => 'æ²³å—'
+        'phone' => '12345678989'
+        'email' => '1017265987@qq.com'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create?Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create&Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601974.3772
+    'REQUEST_TIME' => 1523601974
+]
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:33 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+    'Point' => [
+        'name' => 'æ²³å—åˆ†æ”¯'
+        'address' => 'æ²³å—'
+        'phone' => '12345678989'
+        'email' => '1017265987@qq.com'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create?Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/create&Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523601993.8645
+    'REQUEST_TIME' => 1523601993
+]
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/controllers/PointController.php:88
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::execute] INSERT INTO `point` (`create_time`, `name`, `address`, `phone`, `email`) VALUES ('2018-04-13 14:46:44', 'æ²³å—åˆ†æ”¯', 'æ²³å—', '12345678989', '1017265987@qq.com')
+    in /Users/nicc/git/express/backend/controllers/PointController.php:89
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/create'
+]
+
+$_POST = [
+    '_csrf-backend' => '2jnNxYzlW16YgEmE-4Jv7S7SWV28v4RgdACwT8ERuNX_U5YcElI_mPwpQoyORsqPMZ0PwmMoooYymnh6QMNygA=='
+    'Point' => [
+        'name' => 'æ²³å—åˆ†æ”¯'
+        'address' => 'æ²³å—'
+        'phone' => '12345678989'
+        'email' => '1017265987@qq.com'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_CONTENT_LENGTH' => '263'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:8881/point/create?Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '263'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 's=//point/create'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602004.496
+    'REQUEST_TIME' => 1523602004
+]
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `point` WHERE `delete_flag`=1
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+    in /Users/nicc/git/express/backend/views/point/index.php:70
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE `delete_flag`=1 LIMIT 20
+    in /Users/nicc/git/express/backend/models/PointQuery.php:23
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:46:44 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/create?Point%5Bname%5D=%E6%B2%B3%E5%8D%97%E5%88%86%E6%94%AF&Point%5Baddress%5D=%E6%B2%B3%E5%8D%97&Point%5Bphone%5D=12345678989&Point%5Bemail%5D=1017265987%40qq.com'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/index'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602004.6645
+    'REQUEST_TIME' => 1523602004
+]
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE (`id`='4') AND (`delete_flag`=1)
+    in /Users/nicc/git/express/backend/models/PointQuery.php:32
+    in /Users/nicc/git/express/backend/models/PointSearch.php:78
+    in /Users/nicc/git/express/backend/controllers/PointController.php:155
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:82
+    in /Users/nicc/git/express/backend/controllers/PointController.php:155
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:82
+    in /Users/nicc/git/express/backend/controllers/PointController.php:155
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:17 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/data'
+    'PointSearch' => [
+        'id' => '4'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/data?PointSearch%5Bid%5D=4'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/data&PointSearch%5Bid%5D=4'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602037.2286
+    'REQUEST_TIME' => 1523602037
+]
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:20 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/update'
+    'PointSearch' => [
+        'name' => 'ä¿å®šå¸‚æ€»ä»£ç†'
+        'address' => 'ä¿å®šå¸‚'
+        'phone' => '15930298160'
+        'email' => '1017260059@qq.com'
+        'id' => '4'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/data?PointSearch%5Bid%5D=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '60864'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/update?PointSearch%5Bname%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82%E6%80%BB%E4%BB%A3%E7%90%86&PointSearch%5Baddress%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82&PointSearch%5Bphone%5D=15930298160&PointSearch%5Bemail%5D=1017260059%40qq.com&PointSearch%5Bid%5D=4'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/update&PointSearch%5Bname%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82%E6%80%BB%E4%BB%A3%E7%90%86&PointSearch%5Baddress%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82&PointSearch%5Bphone%5D=15930298160&PointSearch%5Bemail%5D=1017260059%40qq.com&PointSearch%5Bid%5D=4'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602040.6479
+    'REQUEST_TIME' => 1523602040
+]
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:92
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:92
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE (`id`='4') AND (`delete_flag`=1)
+    in /Users/nicc/git/express/backend/models/PointQuery.php:32
+    in /Users/nicc/git/express/backend/models/PointSearch.php:94
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::execute] UPDATE `point` SET `update_time`='2018-04-13 14:47:41' WHERE `id`=4
+    in /Users/nicc/git/express/backend/models/PointSearch.php:100
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/update'
+    'PointSearch' => [
+        'name' => 'ä¿å®šå¸‚æ€»ä»£ç†'
+        'address' => 'ä¿å®šå¸‚'
+        'phone' => '15930298160'
+        'email' => '1017260059@qq.com'
+        'id' => '4'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/data?PointSearch%5Bid%5D=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61098'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/update?PointSearch%5Bname%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82%E6%80%BB%E4%BB%A3%E7%90%86&PointSearch%5Baddress%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82&PointSearch%5Bphone%5D=15930298160&PointSearch%5Bemail%5D=1017260059%40qq.com&PointSearch%5Bid%5D=4'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/update&PointSearch%5Bname%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82%E6%80%BB%E4%BB%A3%E7%90%86&PointSearch%5Baddress%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82&PointSearch%5Bphone%5D=15930298160&PointSearch%5Bemail%5D=1017260059%40qq.com&PointSearch%5Bid%5D=4'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602061.6439
+    'REQUEST_TIME' => 1523602061
+]
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `point` WHERE `delete_flag`=1
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+    in /Users/nicc/git/express/backend/views/point/index.php:70
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE `delete_flag`=1 LIMIT 20
+    in /Users/nicc/git/express/backend/models/PointQuery.php:23
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:41 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/data?PointSearch%5Bid%5D=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/index'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602061.7309
+    'REQUEST_TIME' => 1523602061
+]
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:92
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:92
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE (`id`='4') AND (`delete_flag`=1)
+    in /Users/nicc/git/express/backend/models/PointQuery.php:32
+    in /Users/nicc/git/express/backend/models/PointSearch.php:94
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::execute] UPDATE `point` SET `update_time`='2018-04-13 14:47:44' WHERE `id`=4
+    in /Users/nicc/git/express/backend/models/PointSearch.php:100
+    in /Users/nicc/git/express/backend/controllers/PointController.php:107
+2018-04-13 14:47:43 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/update'
+    'PointSearch' => [
+        'name' => 'ä¿å®šå¸‚æ€»ä»£ç†'
+        'address' => 'ä¿å®šå¸‚'
+        'phone' => '15930298160'
+        'email' => '1017260059@qq.com'
+        'id' => '4'
+    ]
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/data?PointSearch%5Bid%5D=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/update?PointSearch%5Bname%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82%E6%80%BB%E4%BB%A3%E7%90%86&PointSearch%5Baddress%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82&PointSearch%5Bphone%5D=15930298160&PointSearch%5Bemail%5D=1017260059%40qq.com&PointSearch%5Bid%5D=4'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/update&PointSearch%5Bname%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82%E6%80%BB%E4%BB%A3%E7%90%86&PointSearch%5Baddress%5D=%E4%BF%9D%E5%AE%9A%E5%B8%82&PointSearch%5Bphone%5D=15930298160&PointSearch%5Bemail%5D=1017260059%40qq.com&PointSearch%5Bid%5D=4'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602063.9904
+    'REQUEST_TIME' => 1523602063
+]
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\web\Session::open] Session started
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `express_manage`.`user` WHERE (`id`=1) AND (`status`=10)
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=express_manage
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `express_manage`.`user`
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in /Users/nicc/git/express/backend/models/UserQuery.php:69
+    in /Users/nicc/git/express/common/models/User.php:65
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/AccessControl.php:70
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `point`
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'point' AND kcu.table_name = 'point'
+    in /Users/nicc/git/express/backend/models/PointSearch.php:55
+    in /Users/nicc/git/express/backend/controllers/PointController.php:59
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `point` WHERE `delete_flag`=1
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+    in /Users/nicc/git/express/backend/views/point/index.php:70
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `point` WHERE `delete_flag`=1 LIMIT 20
+    in /Users/nicc/git/express/backend/models/PointQuery.php:23
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:59
+    in /Users/nicc/git/express/common/components/GridViewExtend.php:27
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `menu`
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/MenuHelper.php:71
+    in /Users/nicc/git/express/backend/views/layouts/_nav.php:47
+    in /Users/nicc/git/express/backend/views/layouts/main.php:41
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:118
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:123
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][yii\db\Command::query] SELECT * FROM `auth_assignment` WHERE `user_id`='1'
+    in /Users/nicc/git/express/vendor/mdmsoft/yii2-admin/components/Helper.php:127
+    in /Users/nicc/git/express/backend/views/layouts/_navbar.php:73
+    in /Users/nicc/git/express/backend/views/layouts/main.php:46
+2018-04-13 14:47:44 [127.0.0.1][1][-][info][application] $_GET = [
+    's' => '//point/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6' => '1519434619'
+    '_ga' => 'GA1.1.689779445.1519434622'
+    'Huiskin' => 'blue'
+    '_identity' => '298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"AB0pN9LghYXW_nItiXn-9IWj76ID0MQr\",2592000]\";}'
+    'ump-backend' => 'd7hqj4iq9m7mcocn9da7h8jk82'
+    '_csrf-backend' => 'baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"%j[Ùž·dÆd©uÄ¥bOVŸß—&æFšÈ5ÒÊU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'nicc'
+    'HOME' => '/Users/nicc'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'Hm_lvt_c4fb630bdc21e7a693a06c26ba5651c6=1519434619; _ga=GA1.1.689779445.1519434622; Huiskin=blue; _identity=298b66be7e7aced5338e2d57d741f2f7b3943c4ee8f25ce7419575d4fa7a2569a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22AB0pN9LghYXW_nItiXn-9IWj76ID0MQr%22%2C2592000%5D%22%3B%7D; ump-backend=d7hqj4iq9m7mcocn9da7h8jk82; _csrf-backend=baff3fa9a3c5537bd8bbbd908372be60525cfc94f1366eed9169c76b6015bc19a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%25j%5B%D9%9E%B7d%C6d%A9%0B%08u%C4%A5b%1FOV%9F%DF%97%26%E6F%9A%C85%81%D2%CAU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost:8881/point/data?PointSearch%5Bid%5D=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_HOST' => 'localhost:8881'
+    'SCRIPT_FILENAME' => '/Users/nicc/git/express/backend/web//index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8881'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '61100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.12.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/nicc/git/express/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/point/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 's=//point/index'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1523602064.0699
+    'REQUEST_TIME' => 1523602064
+]
