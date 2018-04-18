@@ -58,7 +58,7 @@ class ExpController extends Controller
                 $exp_list['p_phone']      = $PointSearchRes['phone'];
                 $exp_list['address']      = $PointSearchRes['address'];
                 $list                     = '';
-                $list .= '<li class="first"> <p>' . $exp_list["create_time"] . '</p> <p>' . $exp_list["address"] . '处理, 电话:' . $exp_list['p_phone'] . ', 下一网点:' . $exp_list['next_address'] . '</p> <span class="before"></span><span class="after"></span><i class="mh-icon mh-icon-new"></i></li> <li>';
+                $list .= '<li class="first"> <p>' . $exp_list["create_time"] . '</p> <p>['.Yii::$app->params['status'][$exp_list['state']].'] ' . $exp_list["address"] . '处理, 电话:' . $exp_list['p_phone'] . ', 下一网点:' . $exp_list['next_address'] . '</p> <span class="before"></span><span class="after"></span><i class="mh-icon mh-icon-new"></i></li> <li>';
 
                 $rec_list = $HistoryRecordSearch::find()->andFilterWhere(['!=', 'state', $exp_list['state']])->andFilterWhere(['express_id' => $express_number])->orderBy('state asc')->asArray()->all();
 
