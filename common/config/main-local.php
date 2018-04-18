@@ -12,9 +12,9 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=express_manage',
+            'dsn' => 'mysql:host=47.94.146.53;dbname=express_manage',
             'username' => 'root',
-            'password' => 'root',
+            'password' => '3b508c731665dfae',
             'charset' => 'utf8',
         ],
         'mailer' => [
