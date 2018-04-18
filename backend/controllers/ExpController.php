@@ -15,7 +15,8 @@ use yii\web\Controller;
  */
 class ExpController extends Controller
 {
-    public $layout = 'single';
+    public $layout               = 'single';
+    public $enableCsrfValidation = false;
 
     public function behaviors()
     {
